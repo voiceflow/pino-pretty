@@ -91,7 +91,7 @@ module.exports = function prettyFactory (options) {
     const prettifiedLevel = prettifyLevel({ log, colorizer })
     const prettifiedMetadata = prettifyMetadata({ log })
     const prettifiedTime = prettifyTime({ log, translateFormat: opts.translateTime, timestampKey })
-    
+
     let line = ''
     if (opts.levelFirst && prettifiedLevel) {
       line = `${prettifiedLevel}`
@@ -126,7 +126,7 @@ module.exports = function prettyFactory (options) {
     if (line.length > 0) {
       line += EOL
     }
-    if ((log.type === 'Error' || log.type == 'Warn' ) && log.stack) {
+    if ((log.type === 'Error' || log.type === 'Warn') && log.stack) {
       const prettifiedErrorLog = prettifyErrorLog({
         log,
         errorLikeKeys: errorLikeObjectKeys,
