@@ -1,5 +1,5 @@
 {
-  "name": "pino-pretty",
+  "name": "@voiceflow/pino-pretty",
   "version": "3.5.0",
   "description": "Prettifier for Pino log lines",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/pinojs/pino-pretty.git"
+    "url": "git+ssh://git@github.com/voiceflow/pino-pretty.git"
   },
   "keywords": [
     "pino"
