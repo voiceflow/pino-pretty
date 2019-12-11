@@ -90,7 +90,7 @@ module.exports = function prettyFactory (options) {
     const prettifiedLevel = prettifyLevel({ log, colorizer, levelKey })
     const prettifiedMetadata = prettifyMetadata({ log })
     const prettifiedTime = prettifyTime({ log, translateFormat: opts.translateTime, timestampKey })
-
+    
     let line = ''
     if (opts.levelFirst && prettifiedLevel) {
       line = `${prettifiedLevel}`
